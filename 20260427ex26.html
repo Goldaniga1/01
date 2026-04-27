@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex26</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 40px;
+            background: #fff;
+        }
+
+        /* 左：圓角、不變形 */
+        .img-left {
+            width: 33%;
+            height: 300px;
+            border-radius: 18px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .img-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            box-shadow: 0 0 0 2px white, 0 0 0 3px #575757;
+            object-fit: cover;
+            display: block;
+            flex-shrink: 0;
+        }
+
+        /* 右：固定高度 300px、有變形 */
+        .img-right {
+            width: 33%;
+            height: 300px;
+            object-fit: fill;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 左圖：換成你的圖片網址 -->
+    <img class="img-left" src="https://news.cgtn.com/news/2026-03-20/AI-Influence-Pet-and-fruit-microdramas-take-the-internet-by-storm-1LEUvn7BBOE/img/20d7d482cbc448319ca9627e41d6c041/20d7d482cbc448319ca9627e41d6c041.jpeg" alt="left">
+
+    <!-- 中圖（圓形）：換成你的圖片網址 -->
+    <img class="img-circle" src="https://news.cgtn.com/news/2026-03-20/AI-Influence-Pet-and-fruit-microdramas-take-the-internet-by-storm-1LEUvn7BBOE/img/20d7d482cbc448319ca9627e41d6c041/20d7d482cbc448319ca9627e41d6c041.jpeg" alt="circle">
+
+    <!-- 右圖（變形）：換成你的圖片網址 -->
+    <img class="img-right" src="https://news.cgtn.com/news/2026-03-20/AI-Influence-Pet-and-fruit-microdramas-take-the-internet-by-storm-1LEUvn7BBOE/img/20d7d482cbc448319ca9627e41d6c041/20d7d482cbc448319ca9627e41d6c041.jpeg" alt="right">
+
+</body>
+</html>
